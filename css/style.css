@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Share+Tech+Mono&display=swap');
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+    max-width: 100;
+    overflow-x: hidden;
+}
+
+#botonera {
+    background-color: rgba(255, 177, 205, .9);
+    position: sticky;
+    top: 0;
+    font-size: 2rem;
+}
+
+#botonera img {
+    width: 200px;
+}
+
+#botonera ul li a {
+    background: linear-gradient(to top, rgb(235, 33, 108), rgb(235, 33, 108));
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+#botonera ul li a:hover {
+    font-weight: 600;
+    color: black;
+    background-size: 100% 4px;
+}
+
+
+}
+h1,
+h2,
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    color: #5c283b;
+}
+#titulo {
+    font-size: 5em;
+    font-weight: 700;
+    color: rgb(235, 33, 108);
+}
+#subtitulo {
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: 600;
+    color: rgb(235, 33, 108);
+}
+#main p {
+    text-align: justify;
+    font-family: 'Share Tech Mono', monospace;
+    margin: 10px auto;
+}
+.btn-episodios {
+    background-color: #5c283b;
+    color: white;
+    font-size: 2em;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+.btn-episodios:hover {
+    background: linear-gradient(to top, #5c283b, #c54f7a);
+    color: white;
+}
+#tituloForm {
+    font-size: 3rem;
+    font-weight: 500;
+    color: rgb(216, 65, 120);
+}
+#tituloSecundario {
+    font-size: 3rem;
+    font-weight: 500;
+    color: rgb(216, 65, 120);
+}
+#tituloFooter {
+    font-size: 3rem;
+    font-weight: 1000;
+    margin-right: 20px;
+}
+
+/**Inicia contenido Nosotras**/
+
+/*.imagenPodcast {
+    display: flex;
+    flex-direction: column;
+    vertical-align: center;
+    justify-content: center;
+    gap: 2em;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+p {
+    width: 90%;
+    text-align: justify;
+    padding: 10px 30px;
+    
+}
+
+.mapaSeccion {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: auto;
+    margin: 10px auto;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+#nosotras {
+    grid-area: nosotras;
+}
+
+#imagenUno {
+    grid-area: imagenUno;
+}
+
+#imagenDos {
+    grid-area: imagenDos;
+}
+
+#historia {
+    grid-area: historia;
+}
+
+#proposito {
+    grid-area: proposito;
+}
+
+#mapa {
+    grid-area: mapa;
+}
+
+.nosotrasGeneral {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, auto);
+    grid-template-areas: "nav" "header" "nosotras" "imagenUno" "imagenDos" "historia" "proposito" "mapa" "footer";
+}*/
+
+/*.opinion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opinion legend {
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 40px;
+    vertical-align: center;
+}
+
+.opinion div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.opinion div label {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.opinion div input {
+    margin-left: 15px;
+    margin-right: 15px;
+}*/
+
+/**Contenido contactos**/
+
+/*#datos {
+    grid-area: datos;
+}
+
+#hablar {
+    grid-area: hablar;
+}
+
+#mensaje {
+    grid-area: mensaje;
+}
+
+.contactoForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.contactoCajas {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 2em;
+}
+
+.contactoCajas legend {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 0.5em;
+}
+
+.contactoCajas label {
+    margin: 6px;
+    display: inline-block;
+}
+
+.contactoDatos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contactoDatos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+}
+
+.contactoDebate {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+
+.contactoDebate label {
+    min-width: 9em;
+}
+
+.contactoDebate .contactoInputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.contactoDebate div input {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.mensajeContenedor {
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    border: #5c283b solid 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mensajeContenedor label {
+    font-size: 3rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    line-height: 3em;
+}
+
+.mensajeContenedor .boton {
+    margin: 5px;
+    flex-direction: column;
+}
+
+.contactoGeneral {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat (6, auto);
+    grid-template-areas: "nav" "header" "datos" "hablar" "mensaje" "footer";
+}
+
+
+/**Inicia contenido Episodios**/
+
+/*.tablaEpisodios {
+    width: 90%;
+    margin: 30px auto;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: solid 5px rgb(235, 33, 108);
+}
+
+.tituloTabla {
+    font-weight: 800;
+    text-align: center;
+}
+
+.tablaEpisodios td {
+    text-align: center;
+}*/
+
+/**Inicia contenido Debate**/
+
+/*#debates {
+    grid-area: debates;
+}
+
+#temas {
+    grid-area: temas;
+}
+
+#extra {
+    grid-area: extra;
+}
+
+#comentarios {
+    grid-area: comentarios;
+}
+
+.cajasDebate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 2em;
+}
+
+.debateDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.debateDiv legend {
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 40px;
+    vertical-align: center;
+}
+
+.debateDiv fieldset .debateInputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+    width: 100%;
+}
+
+.debateDiv label {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.mensajeDebate {
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    border: #5c283b solid 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mensajeDebate label {
+    font-size: 2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    line-height: 3em;
+}
+
+.mensajeDebate .boton {
+    margin: 5px;
+    flex-direction: column;
+}
+
+.tituloSeccion {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    gap: 2em;
+    text-decoration: underline;
+    text-align: left;
+    line-height: 1.5em;
+    margin-left: 4em;
+    margin-bottom: 1em;
+    color: rgb(235, 33, 108);
+}
+
+.debateGeneral {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas: "nav" "header" "debates" "temas" "extra" "comentarios" "footer";
+}*/
+
+/**Inicia media queries**/
+
+/*@media (min-width: 768px) {
+    .general {
+        grid-template-columns: 2fr;
+        grid-template-rows: repeat (4, auto);
+        grid-template-areas: "nav nav " "header header" "episodioUno episodioDos" "footer footer";
+    }
+    .episodios {
+        display: flex;
+        justify-content: space-around;
+        box-sizing: border-box;
+    }
+    .contactoGeneral {
+        grid-template-areas: 2fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: "nav nav" "header header" "datos hablar" "mensaje mensaje" "footer footer";
+    }
+    .contactoCajas {
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    .contactoForm {
+        flex-direction: row;
+        box-sizing: border-box;
+    }
+    .nosotrasGeneral {
+        grid-template-columns: 2fr;
+        grid-template-rows: repeat(8, auto);
+        grid-template-areas: "nav nav" "header header" "nosotras nosotras" "imagenUno imagenDos" "historia historia" "proposito proposito" "mapa mapa" "footer footer";
+    }
+    .imagenPodcast {
+        flex-direction: row;
+    }
+    .debateGeneral {
+        grid-template-columns: 2fr;
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas: "nav nav" "header header" "debates debates" "temas extra" "comentarios comentarios" "footer footer";
+    }
+    .cajasDebate {
+        flex-direction: row;
+    }
+}*/
